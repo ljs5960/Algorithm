@@ -1,16 +1,14 @@
-N = int(input())
+N = input()
 arr = []
 
-for _ in range(N):
-	arr.append(int(input()))
+for i in N:
+	arr.append(int(i))
 
-#  Selection Sort
-for i in range(N):
-	min = i
-	for j in range(i+1, N):
-		if arr[j] < arr[min]:
-			min = j
-	arr[min], arr[i] = arr[i], arr[min]
+# Bubble Sort
+for i in range(len(arr)):
+	for j in range(len(arr)-1-i):
+		if arr[j] < arr[j+1]:
+			arr[j], arr[j+1] = arr[j+1], arr[j]
 
 for i in arr:
-	print(i)
+	print(i, end='')
