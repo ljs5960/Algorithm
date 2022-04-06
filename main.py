@@ -1,14 +1,10 @@
-N = input()
+N = int(input())
 arr = []
 
-for i in N:
+for i in range(N):
+	i, j = input().split(' ')
 	arr.append(int(i))
-
-# Bubble Sort
-for i in range(len(arr)):
-	for j in range(len(arr)-1-i):
-		if arr[j] < arr[j+1]:
-			arr[j], arr[j+1] = arr[j+1], arr[j]
+	arr.append(int(j))
 
 for i in arr:
-	print(i, end='')
+	print(i, end=' ')

@@ -22,4 +22,4 @@ for i in range(len(arr)):
 			arr[j], arr[j+1] = arr[j+1], arr[j]
 
 for i in arr:
-	print(i, end='')
+	print(i, sep='^^')
